@@ -8,7 +8,7 @@ Benefits
 
 ### Easy to use
 
-This extension is easy to use with little configuration! You only need to follow four steps (and one of them is simply to create a copy of your images as a precaution) to get up and running!
+This extension is easy to use with little configuration! You only need to follow a few simple steps (and one of them is simply to create a copy of your images as a precaution) to get up and running!
 
 ### Sync all your media images
 
