@@ -35,7 +35,7 @@ See the [Installation](https://github.com/arkadedigital/magento2-s3/wiki/Install
 Support
 -------
 
-Feel free to [create a GitHub issue](https://github.com/arkadedigital/magento2-s3/issues/new) for support regarding this extension.
+Feel free to [create a GitHub issue](https://github.com/arkadedigital/magento2-s3/issues/new) and [send us an email](mailto:support@arkade.com.au) for support regarding this extension.
 
 ### Does this extension upload my log files?
 
