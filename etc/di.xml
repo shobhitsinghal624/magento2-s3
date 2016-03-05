@@ -21,4 +21,7 @@
     <type name="Magento\MediaStorage\Model\File\Storage\Synchronization">
         <plugin name="arkade_s3_model_mediastorage_file_storage_synchronisation_plugin" type="Arkade\S3\Model\MediaStorage\File\Storage\Synchronisation\Plugin" />
     </type>
+    <type name="Magento\Store\Model\Store">
+        <plugin name="arkade_s3_model_store_store_plugin" type="Arkade\S3\Model\Store\Store\Plugin" />
+    </type>
 </config>
