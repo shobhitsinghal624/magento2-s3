@@ -1,5 +1,12 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="s3ConfigListCommand" xsi:type="object">Arkade\S3\Console\Command\ConfigListCommand</item>
+            </argument>
+        </arguments>
+    </type>
     <type name="Magento\MediaStorage\Block\System\Config\System\Storage\Media\Synchronize">
         <plugin name="arkade_s3_block_mediastorage_system_config_system_storage_media_synchronise_plugin" type="Arkade\S3\Block\MediaStorage\System\Config\System\Storage\Media\Synchronise\Plugin" />
     </type>
