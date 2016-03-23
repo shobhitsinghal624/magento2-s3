@@ -2,7 +2,6 @@
 namespace Arkade\S3\Console\Command;
 
 use Magento\Config\Model\Config\Factory;
-use Psr\Log\LoggerInterface;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
@@ -10,16 +9,12 @@ class ConfigListCommand extends \Symfony\Component\Console\Command\Command
 {
     private $configFactory;
 
-    private $log;
-
     public function __construct(
         \Magento\Framework\App\State $state,
-        Factory $configFactory,
-        LoggerInterface $log
+        Factory $configFactory
     ) {
         $state->setAreaCode('adminhtml');
         $this->configFactory = $configFactory;
-        $this->log = $log;
         parent::__construct();
     }
 
