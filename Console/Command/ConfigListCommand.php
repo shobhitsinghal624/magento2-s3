@@ -9,11 +9,13 @@ class ConfigListCommand extends \Symfony\Component\Console\Command\Command
 {
     private $configFactory;
 
+    private $state;
+
     public function __construct(
         \Magento\Framework\App\State $state,
         Factory $configFactory
     ) {
-        $state->setAreaCode('adminhtml');
+        $this->state = $state;
         $this->configFactory = $configFactory;
         parent::__construct();
     }
@@ -27,6 +29,7 @@ class ConfigListCommand extends \Symfony\Component\Console\Command\Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
+        $this->state->setAreaCode('adminhtml');
         $config = $this->configFactory->create();
         $output->writeln('Here are your AWS credentials.');
         $output->writeln('');
